@@ -1,0 +1,19 @@
+def HCF():
+    x=int(input("Enter number: "))
+    y=int(input("Enter number: "))
+    if x>=y:
+        while True:
+            z=x%y
+            if z==0:
+                print(y)
+                break
+            x=y
+            y=z
+    else:
+        while True:
+            z=y%x
+            if z==0:
+                print(x)
+                break
+            y=x
+            x=z
