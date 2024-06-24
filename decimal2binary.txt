@@ -1,0 +1,15 @@
+def dec2bin():
+    decimal=int(input("Enter decimal No: "))
+    y=""
+    while True:
+        x=(decimal%2)
+        z=decimal//2
+        y=y+str(x)
+        x=z
+        decimal=x
+        if x<=1:
+            y=y+str(z)
+            break
+        elif x==0:
+            break
+print(y[::-1])
